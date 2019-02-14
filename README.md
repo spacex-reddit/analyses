@@ -1,4 +1,4 @@
-# A curated list of awesome SpaceX analyses
+# A curated list of SpaceX analyses
 
 ## Mars
 - [Estimating Starship power generation capability for fuel production](mras/estimating-starship-power-generation-capability-for-fuel-production.md) ([original](https://www.reddit.com/r/spacex/comments/ap7h71/estimating_starship_power_generation_capability/))
