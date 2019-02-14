@@ -2,7 +2,7 @@
 
 ---
 
-#TL;DR
+# TL;DR
 
 Fair enough... this is a really long post. And I still feel like I don't go into nearly enough detail.
 
@@ -22,7 +22,7 @@ Fair enough... this is a really long post. And I still feel like I don't go into
 |  |  |
 | **Total** | 74 t |
 
-#Assumptions and methodology
+# Assumptions and methodology
 
 I am working on the assumption of a 1 MW solar-powered propellant plant located at equatorial latitudes (0-30N) capable of refueling one Starship per Earth-Mars synodic period, I'm curious what it might mass in at and especially the ratio of propellant plant Starships to Starships refueled per synod.
 
@@ -38,7 +38,7 @@ Naturally my methodology will not produce a perfect result especially since we h
 
 Generous margins are included. For example a Starship should be able to return to Earth with only 70-80% full tanks, but I assume full tanks. Power production and electrolysis capacity are oversized by about 50%.
 
-#Solar Power Generation
+# Solar Power Generation
 
 I am assuming 10 MW nameplate capacity to get a daily average of 1.5 MW before atmospheric and accumulated dust. Total power requirements to refuel 1 Starship per synod is probably somewhere around 1 MW for 600 days.
 
@@ -55,7 +55,7 @@ Searching for "DC-DC converter for electric aircraft" yielded results like [Comp
 * Solar panel mass: 20 t
 * Mounting, power conversion etc: 5 t (?)
 
-#Electrolysis Stacks
+# Electrolysis Stacks
 
 Another major component will inevitably be electrolysis stacks.  The latest numbers we have to completely fill a Starship are 240 t methane and 860 t oxygen:
 
@@ -76,7 +76,7 @@ The cells would need to produce about 260 kg/day of hydrogen, if it were desired
 * Hydrogen storage: 1 t
 * Oxygen storage: 1 t
 
-#Day-Night Energy Storage
+# Day-Night Energy Storage
 
 It is often assumed that Lithium-ion batteries will be used. This might not be a fair assumption, hydrogen fuel cells seem to offer a much better power density and if the power generation is lightweight enough and the electrolysis mass-efficient enough, it seems to be logical route for power storage. Yeah I know Elon Musk called them Fool Cells but was that in the context of vehicles on Earth or a base on Mars? A "hydrogen economy" is not optional on Mars, though I do think vehicles would use batteries because having to fill separate hydrogen and oxygen tanks and potentially unload a water tank would suck.
 
@@ -99,7 +99,7 @@ Ultimately the night-time power using fuel cells seems to mass in at about 2 t a
 * Oxygen Storage: 800kg
 * Total: 7 t (for a total of about 24 hours of storage)
 
-#Water Extraction
+# Water Extraction
 
 The two basic proposed strategies for extracting water which would be most effective are digging up chunks of icey regolith and baking it, or a Rod well (actually multiple, over time) - I'm not going to consider atmospheric extraction. I like to assume ice will be confirmed by a previous robotic mission.
 
@@ -123,7 +123,7 @@ The equipment including borehole casings could also be made using very lightweig
 * Pipes etc: 2 t
 
 
-#Earthworking
+# Earthworking
 
 I have referenced grading and rolling as a way to prepare surfaces for many hectares of roll out solar blankets.
 
@@ -134,7 +134,7 @@ There are those that may object that these excavators are too small, however the
 * 3x Mini-excavators: 6 t
 * Attachments etc: 2 t
 
-#Backup Generation
+# Backup Generation
 
 It can be assumed that some percentage of solar power remains available during severe dust storms, 5% might be reasonable. Propellant production would be shut down to conserve power for essential functions. Note that unlike most of this analysis, the backup power here is more to provide redundancy for the crewed based, than for the sake of the propellant plant itself, however it is closely tied to the propellant plant as energy storage in hydrocarbons presents one of the only viable medium-term energy storage options.
 
@@ -167,7 +167,7 @@ It's worth noting that every backup option except wind produces a substantial am
 * Fuel Cells + Steam reforming: Free/trivial, the required stuff is already present or the engineers can improvise it.
 * 10 kW of wind turbines: 1 t
 
-#Cooling
+# Cooling
 
 Of the 1 MW electrical generation about 20% of that ends up in propellant and the other 800 kW mostly ends up as waste heat, under Water Extraction I established that heat demands for water extraction is about 60 kW and that provides a small source of high-grade cooling, also heat leaking out of the Starship/building also provides a source of cooling (maybe 100 kW). Not all of the surplus waste heat needs to be discarded as some of it can be used to keep the equipment warm, however I think that most equipment should be well insulated so that if it has to be powered down due to lack of electricity it does not rapidly cool down: thermal cycling reduces the lifespan of equipment, freezing can be damaging. Also components that run at wildly different temperatures have to be isolated from each other, so it is fair to assume that most heat is only getting out intentionally, when the coolant pumps are running.
 
@@ -188,7 +188,7 @@ The precise details of the equipment such as operating temperatures have the pot
 * 1000 m^2 of 120 C radiator: 5 t (?)
 * Plumbing, heat exchangers etc: 2 t (?)
 
-#Atmospheric extraction
+# Atmospheric extraction
 
 Along with water the other important ingredient for rocket propellant is carbon dioxide. This requires that the martian atmosphere be sucked in, filtered, compressed, cooled, compressed some more and so on until the CO₂ gas condenses, any water ice can be scooped out and the nitrogen, argon, carbon monoxide and oxygen gases drawn off. This process ultimately produces a lot of CO₂, a little nitrogen and argon, and trifling amounts of water, carbon monoxide and oxygen.
 
@@ -203,7 +203,7 @@ This section does deserve more examination, but much as with electrolysis I beli
 * Atmospheric Extraction: 2 t
 * Tanks: 1 t
 
-#Sabatier Reactor
+# Sabatier Reactor
 
 The reactor would need to generate ~400 kg of methane per day and needs to take in hydrogen and carbon dioxide at elevated pressures, fortunately electrolysis produces high pressure hydrogen and the carbon dioxide will also be at high pressure after being re-expanded from liquid, so getting the inputs into the reactor is pretty much opening some valves. 
 
@@ -217,7 +217,7 @@ Ultimately I'm just going to call it 1 t.
 
 * Sabatier Reactor: 1 t
 
-#Cyrocoolers
+# Cyrocoolers
 
 Last but not least are the coolers responsible for taking the hot methane from the sabatier reactors and hot oxygen from the electroylsis stacks and chilling it to around -160/-180 C (pressure might be manipulated to prevent the methane freezing). The coolers are also responsible for preventing the escape of boil-off, either by deep-chilling the propellant or through boil-off re-liquefaction. In total around 1800 kg of methane and oxygen would need to be liquefied per day and perhaps about half that in boil-off. Also a considerable mass of CO₂ needs to be liquefied, however the CO₂ needs to be heated before entering the sabatier reactor and could exchange heat with methane ready to enter the coolers.
 
@@ -233,7 +233,7 @@ Ultimately munging these factors together and some details from the previously l
 
 * Cryocoolers: 3 t (?)
 
-#Miscellaneous
+# Miscellaneous
 
 Then there is all that other stuff like cables, mounting brackets, access ways, protective packaging, crane/lift, trailers/sleds, insulation, MLI  tents to protect equipment during severe dust storms, insulated pipes to pump methalox between Starships so on.
 
@@ -241,7 +241,7 @@ It's not clear exactly how much of this stuff will be needed. Clearly, solar pan
 
 * Miscellaneous: 10 t (?)
 
-#Conclusion
+# Conclusion
 
 The final number I came up with is 74 t. Working on the assumption that Starship can land 100 t on Mars that would easily fit within the payload capacity with some leftover for more redundancy.
 
